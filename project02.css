@@ -1,0 +1,171 @@
+#hover-card {
+    width: 18rem;
+    position: absolute;
+    bottom: -100px;
+    right: 920px;
+    /* background-color: transparent; Initial background color */
+    transition: background-color 1.5s;
+    /* Smooth transition */
+}
+
+#hover-card:hover {
+    background-color: blue;
+    /* Change background color to blue on hover */
+}
+
+#hover-card:hover .card-title,
+#hover-card:hover .card-text,
+#hover-card:hover .btn-primary {
+    color: white;
+    /* Change text color to white on hover */
+}
+
+#hover-card:hover .card-body .card-text {
+    color: white !important;
+    /* Change text color to white on hover */
+}
+
+.btn-primary:hover {
+    background-color: black;
+    transition: background-color 1.5s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    border-color: black;
+}
+
+
+
+.progress-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.progress {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-bar {
+    stroke: blue;
+    /* Change color to white */
+    stroke-dasharray: 251;
+    /* circumference of the circle */
+    stroke-dashoffset: 251;
+    /* start with the full circle */
+    transition: stroke-dashoffset linear;
+    /* Faster animation */
+    /* animate the dash offset */
+}
+
+.progress-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #333;
+}
+
+
+.circle-card img {
+    transition: transform 0.5s ease;
+}
+
+.circle-card:hover img {
+    transform: rotateY(180deg);
+}
+
+
+.card-container {
+    position: relative;
+}
+
+#card1-hover {
+    width: 18rem;
+    /* Other styles */
+    transition: background-color 1.3s ease;
+    /* Other styles */
+}
+
+
+#card1-hover:hover {
+    background-color: blue;
+    /* Change background color to blue on hover */
+}
+
+#card1-hover:hover .card-title1,
+#card1-hover:hover .card-title2 {
+    color: white;
+    /* Change text color to white on hover */
+}
+
+#card1-hover:hover .card-body .card-title2 {
+    color: white !important;
+    /* Change text color to white on hover */
+}
+
+
+
+@keyframes wave {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.card-img-top {
+    transition: transform 0.5s;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+
+/* styles.css */
+.dropdown-menu {
+    display: none; /* Hide the dropdown menu by default */
+    opacity: 0; /* Set initial opacity to 0 */
+    height: 0; /* Set initial height to 0 */
+    overflow: hidden; /* Hide any content that overflows the height */
+    transition: opacity 0.5s ease, height 0.5s ease; /* Add transition effect for opacity and height */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1; /* Change opacity to 1 on hover */
+    height: auto; /* Set height to auto to reveal content */
+    transition-delay: 5s; /* Add a delay of 5 seconds */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.content {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Adjust spacing for smaller screens */
+    }
+}
+
+

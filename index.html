@@ -1,0 +1,1377 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Project 2</title>
+
+    <link rel="stylesheet" type="text/css" href="project02.css">
+
+</head>
+
+<body style="background-color: #eceff6;"></body>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1584f3;">
+    <div class="container-fluid my-0">
+        <a class="navbar-brand text-light" href="#" style="margin-left: 120px; color: rgb(255, 255, 255);">
+            &#x1F4CD; 1403 Washington Ave, United States</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#"
+                        style="color: rgb(255, 255, 255);">
+                        &#9743; (+150)-4899-8221
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#" style="margin-left: 5px;"
+                        style="color: rgb(255, 255, 255);">
+                        &#128231; info@traga.com
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#"
+                        style="margin-left: 360px; color: rgb(255, 255, 255);"><b>Follow Us On :</b>
+                        <img src="https://static.vecteezy.com/system/resources/previews/020/964/386/original/facebook-circle-icon-for-web-design-free-png.png"
+                            alt="Facebook" width="20" height="20" style="margin-left: 10px; ">
+                        <img src="data:image/png;base64,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"
+                            alt="Twitter" width="20" height="20" style="margin-left: 10px; border-radius: 50%;">
+                        <img src="data:image/png;base64,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"
+                            alt="YouTube" width="20" height="20" style="margin-left: 10px; border-radius: 50%;">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Instagram" width="20" height="20" style="margin-left: 10px; border-radius: 50%;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cfdef4; padding: 5px 10px; height: 120px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="margin-left: 160px;">
+            <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/logo.svg" alt="Icon" width="200"
+                height="200" style="margin-right: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="color: rgb(7, 7, 7);margin-right: 10px; font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <b>HOME</b>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+                        style="background-color: #e9f0f9;">
+                        <li><a class="dropdown-item" href="#">Digital Agency</a></li>
+                        <li><a class="dropdown-item" href="#">Web Development</a></li>
+                        <li><a class="dropdown-item" href="#">Software Company</a></li>
+                        <li><a class="dropdown-item" href="#">Startup Company</a></li>
+                        <li><a class="dropdown-item" href="#">IT Solutions</a></li>
+                        <li><a class="dropdown-item" href="#">Web Agency</a></li>
+                        <li><a class="dropdown-item" href="#">App Landing</a></li>
+                        <li><a class="dropdown-item" href="#">Sass Landing</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                        style="margin-right: 10px; font-size: 14px;"><b>ABOUT US</b></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="color: rgb(7, 7, 7); margin-right: 10px; font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <b>SERVICES</b>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+                        style="background-color: #e9f0f9;">
+                        <li><a class="dropdown-item" href="#">Services</a></li>
+                        <li><a class="dropdown-item" href="#">Service Details</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="color: rgb(7, 7, 7); margin-right: 10px; font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <b>PAGES</b>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+                        style="background-color: #e9f0f9;">
+
+                        <div class="btn-group dropend" style="position: relative;">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop Page
+                            </button>
+                        </div>
+                        <li><a class="dropdown-item" href="#">Team</a></li>
+                        <li><a class="dropdown-item" href="#">Team Details</a></li>
+                        <li><a class="dropdown-item" href="#">Projects</a></li>
+                        <li><a class="dropdown-item" href="#">Project Details</a></li>
+                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                        <li><a class="dropdown-item" href="#">Pricing</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li><a class="dropdown-item" href="#">Error Page</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="color: rgb(7, 7, 7); margin-right: 10px; font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <b>BLOGS</b>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+                        style="background-color: #e9f0f9;">
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                        style="margin-right: 40px; font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>CONTACT
+                            US</b></a>
+                </li>
+
+            </ul>
+
+            <span class="navbar-text" style="font-size: 20px; margin-right: 15px;">
+                <button class="btn btn-primary"
+                    style="width: 50px; height: 50px; border-radius: 50%; background-color: white; border-color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="black">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.85-5-5.66-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.19 5.34 5.66a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                </button>
+            </span>
+
+            <span class="navbar-text" style="font-size: 20px; margin-right: 40px;">
+                <button class="btn btn-primary"
+                    style="width: 50px; height: 50px; border-radius: 50%; background-color: white; border-color: white;">
+                    <span style="color: black; font-size: 20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 10.71a2 2 0 0 0 2 1.46h10.64a2 2 0 0 0 2-1.46L23 5H6"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+
+
+
+            <button type="button" class="btn btn-primary btn-lg" style="font-size: 18px; margin-right: 50px;">MAKE
+                APPOINTMENT &rarr;
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+
+<div style="display: flex; align-items: flex-start; margin-top: 55px;">
+
+    <!-- Content section -->
+    <div style="flex: 1;">
+
+        <!-- Heading 2 -->
+        <h2
+            style="font-size: 22px; margin-left: 150px; margin-right: 150px; margin-top: 180px; white-space: nowrap; color: #0b72bb;">
+            BEST MARKETING SERVICES </h2>
+
+        <!-- Heading 1 -->
+        <h1 style="font-size: 70px; margin-left: 150px; margin-bottom: 10px; white-space: nowrap; color: #000000;">
+            <b>Make The Easiest <br>
+                Solution For You</b>
+        </h1>
+
+        <!-- Paragraph -->
+        <p style="font-size: 16px; margin-left: 150px; color: #746f6f; margin-top: 0;font-family: 'Arial', sans-serif;">
+            Energistically harness ubiquitous
+            imperatives without state of the art collaboration and idea-sharing. Monotonectally parallel task cross-unit
+            experiences and front-end.</p>
+
+        <!-- Button -->
+        <button type="button" class="btn btn-primary btn-lg" style="margin-left: 150px; margin-top: 30px;"> About Us
+            &rarr;
+        </button>
+
+        <!-- Additional Text -->
+        <span style="font-size: 18px; color: #090909; margin-left: 90px; "><b>Watch Our Story</b></span>
+        <span style="font-size: 14px; color: #696464; margin-left: -144px; position: relative; top: 30px;">Subscribe
+            Now</span>
+
+    </div>
+
+    <!-- Image -->
+    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/hero_img_4_1.png"
+        alt="Description of the image" style="margin-right: 10px; margin-top: 2px;">
+
+</div>
+
+<style>
+    .page-break {
+        page-break-after: always;
+    }
+
+    .new-page {
+        background-color: #ffffff;
+        /* Change this to the color you want */
+    }
+</style>
+
+<div class="page-break"></div>
+
+<div class="new-page">
+    <!-- New content for the new page goes here -->
+    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/about_3_1.png"
+        alt="Description of the image" style="margin-left: 75px; margin-top: 120px;">
+
+    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/title_shape_2.svg"
+        alt="Description of the image" style="margin-left: 85px; margin-top: -400px;">
+
+    <p style="font-size: 16px; color: #3366ff; position: absolute; top: 1105px; right: 465px;"><b>ABOUT TRAGA IT
+            SOLUTIONS</b></p>
+
+    <h1 style="font-size: 40px; color: #000000; position: absolute; top: 1150px; right: 215px;"><b>We Are Increasing
+            Business <br> Success With</b></h1>
+    <h2 style="font-size: 40px; color: #1b43e4; position: absolute; top: 1197px; right: 257px;"><b>Technology</b></h2>
+
+    <p
+        style="font-size: 16px; color: #8d8787; position: absolute; top: 1280px; right: 135px; font-family: 'Arial', sans-serif;">
+        Synergistically
+        incentivize effective imperatives through fully researched intellectual<br>capital. Appropriately
+        fashion client-based.</p>
+
+
+    <p>
+        <button id="collapseButton" class="btn btn-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"
+            style="font-family: 'Arial', sans-serif; width: 300px; height: 55px; position: absolute; top: 1350px; right: 421px;">
+            AWARD WINNING
+        </button>
+    </p>
+
+    <div style="height: 1000px; position: absolute; top: 1405px; right: 125px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body" style="width: 600px;">
+                <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/about_3_1_1.jpg"
+                    alt="Description of the image"
+                    style="margin-left: 20px; margin-top: 10px; width: 200px; height: auto;">
+
+                <h1 style="font-size: 20px; color: #000000; margin-left: 280px; margin-top:-200px; width: 200px">
+                    <b>An Award-Winning Company.</b>
+                </h1>
+
+                <p
+                    style="color: rgb(115, 115, 115); font-size: 16px; font-family: 'Arial', sans-serif; margin-left: 280px; margin-top:-1px; width: 299px">
+                    Monotonically matrix extensible applications and go forward
+                    communities. Synergistically extend client-based manufactured.</p>
+
+                <!-- Button -->
+                <button type="button" class="btn btn-primary btn-lg"
+                    style="margin-left: 280px; margin-top: -14px; width: 145px; font-size: 17px;">
+                    About More &rarr;
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2"
+            aria-expanded="false" aria-controls="collapseWidthExample2"
+            style="font-family: 'Arial', sans-serif; width: 300px; height: 55px; position: absolute; top: 1350px; right: 125px; background-color: black; color: white;">
+            TECHNOLOGY INDEX
+        </button>
+    </p>
+
+    <div style="height: 1000px; position: absolute; top: 1405px; right: 125px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+            <div class="card card-body" style="width: 600px;">
+                <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/about_3_1_2.jpg"
+                    alt="Description of the image"
+                    style="margin-left: 20px; margin-top: 10px; width: 200px; height: auto;">
+
+                <h1 style="font-size: 20px; color: #000000; margin-left: 280px; margin-top:-200px; width: 200px">
+                    <b>Having 25+ Years Of Experience.</b>
+                </h1>
+
+                <p
+                    style="color: rgb(115, 115, 115); font-size: 16px; font-family: 'Arial', sans-serif; margin-left: 280px; margin-top:-1px; width: 299px">
+                    Monotonically matrix extensible applications and go forward communities. Synergistically extend
+                    client-based manufactured.</p>
+
+                <!-- Button -->
+                <button type="button" class="btn btn-primary btn-lg"
+                    style="margin-left: 280px; margin-top: -14px; width: 145px; font-size: 17px;">
+                    About More &rarr;
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-11" style="margin-top: 100px;">
+                <div class="card w-100" style="background-image: url('https://img.freepik.com/free-vector/gradient-technological-background_23-2148884155.jpg');
+                     background-size: 100% auto; background-position: center; height: 450px; position: relative;">
+                    <div class="card-body">
+                        <!-- Image -->
+                        <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/title_shape_2.svg"
+                            alt="Description of the image"
+                            style="position: absolute; margin-left: 140px; margin-top: 94px;">
+
+                        <!-- Paragraph -->
+                        <p style="font-size: 18px; color: #3366ff; position: absolute; top: 110px; right: 1030px;">
+                            <b>LATEST PROJECT</b>
+                        </p>
+
+                        <h1
+                            style="font-size: 40px; color: #ffffff; position: absolute; top: 150px; right: 645px; font-family: 'Arial', sans-serif;">
+                            <b> We Provide Exclusive Service <br> For</b>
+                        </h1>
+
+                        <h1
+                            style="font-size: 40px; color: #0707ff; position: absolute; top: 150px; right: 860px; font-family: 'Arial', sans-serif;">
+                            <b> <br>Your Business</b>
+                        </h1>
+
+                        <!-- Button -->
+                        <button type="button" class="btn btn-primary btn-lg"
+                            style="margin-left: 1050px; margin-top: 135px;"> View All Services &rarr;
+                        </button>
+
+                        <!-- Smaller Card -->
+                        <div class="card" id="hover-card"
+                            style="width: 18rem; height: 18rem; position: absolute; bottom: -150px; right: 1000px;">
+                            <div class="card-body">
+                                <h1 class="card-title"
+                                    style="margin-left: 55px; margin-top: 15px; font-size: 25px; font-family: 'Arial', sans-serif;">
+                                    <b>UI/UX Design</b>
+                                </h1>
+
+                                <p class="card-text"
+                                    style="color: #000000; font-size: 16px; margin-left: 15px; font-family: 'Arial', sans-serif;">
+                                    Continually engage customized infomediarie and quality growth startegies.
+                                    Appropriately.</p>
+
+                                <!-- Button -->
+                                <button type="button" class=" btn-primary btn-lg"
+                                    style="margin-left: 50px; margin-top: 30px;"> Read More &rarr;
+                                </button>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Smaller Card 2 -->
+                        <div class="card" id="hover-card"
+                            style="width: 18rem; height: 18rem; position: absolute; bottom: -150px; right: 680px;">
+                            <div class="card-body">
+                                <h1 class="card-title"
+                                    style="margin-left: 26px; margin-top: 15px; font-size: 25px; font-family: 'Arial', sans-serif;">
+                                    <b>Digital Marketing</b>
+                                </h1>
+
+                                <p class="card-text"
+                                    style="color: #000000; font-size: 16px; margin-left: 15px; font-family: 'Arial', sans-serif;">
+                                    Continually engage customized infomediarie and quality growth startegies.
+                                    Appropriately.</p>
+
+                                <!-- Button -->
+                                <button type="button" class="btn-primary btn-lg"
+                                    style="margin-left: 50px; margin-top: 30px;"> Read More &rarr;
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <!-- Smaller Card 3 -->
+                        <div class="card" id="hover-card"
+                            style="width: 18rem; height: 18rem; position: absolute; bottom: -150px; right: 360px;">
+                            <div class="card-body">
+                                <h1 class="card-title"
+                                    style="margin-left: 15px; margin-top: 15px; font-size: 25px; font-family: 'Arial', sans-serif;">
+                                    <b>Business Analysis</b>
+                                </h1>
+
+                                <p class="card-text"
+                                    style="color: #000000; font-size: 16px; margin-left: 15px; font-family: 'Arial', sans-serif;">
+                                    Continually engage customized infomediarie and quality growth startegies.
+                                    Appropriately.</p>
+
+                                <!-- Button -->
+                                <button type="button" class=" btn-primary btn-lg"
+                                    style="margin-left: 50px; margin-top: 30px;"> Read More &rarr;
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <!-- Smaller Card 4 -->
+                        <div class="card" id="hover-card"
+                            style="width: 18rem; height: 18rem; position: absolute; bottom: -150px; right: 40px;">
+                            <div class="card-body">
+                                <h1 class="card-title"
+                                    style="margin-left: 17px; margin-top: 15px; font-size: 25px; font-family: 'Arial', sans-serif;">
+                                    <b>Software Services</b>
+                                </h1>
+
+                                <p class="card-text"
+                                    style="color: #000000; font-size: 16px; margin-left: 15px; font-family: 'Arial', sans-serif;">
+                                    Continually engage customized infomediarie and quality growth startegies.
+                                    Appropriately.</p>
+
+                                <!-- Button -->
+                                <button type="button" class="btn-primary btn-lg"
+                                    style="margin-left: 50px; margin-top: 30px;"> Read More &rarr;
+                                </button>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="page-break"></div>
+
+<div class="new-page" style="background-color: #f0f0f0; position: relative;"></div>
+<div class="circle-card"
+    style="position: absolute; margin-top: 288px; left: 1100px; width: 140px; height: 140px; background-color: #3366ff; border-radius: 50%; box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.1);">
+    <h3 style="text-align: center; margin-top: 33px; font-family: 'Arial', sans-serif; color: #ffffff"><b>10k+</b>
+    </h3>
+    <h3 style="text-align: center; font-size: 17px; margin-top: 9px; font-family: 'Arial', sans-serif; color: #ffffff">
+        Active Clients</h3>
+</div>
+
+<img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/title_shape_2.svg"
+    alt="Description of the image" style="position: absolute; margin-left: 160px; margin-top: 300px;">
+
+<p style="font-size: 18px; color: #3366ff; position: absolute; margin-left: 205px; margin-top:300px;"><b>WHY CHOOSE
+        US</b></p>
+
+<h1 style="font-size: 40px; color: #000000; position: absolute; margin-left: 155px; margin-top: 347px;"><b>More Than
+        24+ Years Experience <br>We Provide</b></h1>
+
+<h2 style="font-size: 40px; color: #1b43e4; position: absolute; margin-left: 382px; margin-top: 393px;"><b>IT
+        Services</b></h2>
+
+<p
+    style="font-size: 16px; color: #8d8787; position: absolute; margin-left: 155px; margin-top: 460px; font-family: 'Arial', sans-serif;">
+    Collaboratively envisioneer user friendly supply chains and cross unit imperative.<br>Authoritativel fabricate
+    competitive resource and holistic. Holisticly restore real time<br>resources whereas standardized networks.</p>
+
+<div class="progress-container" style="position: absolute; margin-left: 172px; margin-top: 560px;">
+    <svg class="progress" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#ffffff" stroke-width="10"></circle> <!-- White circle -->
+        <circle class="progress-bar" cx="50" cy="50" r="40" fill="none" stroke="#3366ff" stroke-width="10"
+            stroke-dasharray="251" stroke-dashoffset="151"></circle> <!-- Blue progress bar -->
+    </svg>
+
+    <div class="progress-value"><strong>90%</strong></div>
+</div>
+
+<div class="business-grow"
+    style="position: absolute; margin-left: 280px; margin-top: 575px; font-size: 18px; color: black; font-family: 'Arial', sans-serif;">
+    <b>Business Grow</b>
+</div>
+
+
+<p style="font-size: 14px; color: #817e7e; position: absolute; margin-left: 280px; margin-top:600px;">Efficiently
+    transition top-line<br> ideas before market.</p>
+
+<div class="progress-container" style="position: absolute; margin-left: 472px; margin-top: 560px;">
+    <svg class="progress" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#ffffff" stroke-width="10"></circle> <!-- White circle -->
+        <circle class="progress-bar" cx="50" cy="50" r="40" fill="none" stroke="#3366ff" stroke-width="10"
+            stroke-dasharray="251" stroke-dashoffset="0"></circle> <!-- Blue progress bar -->
+    </svg>
+
+    <div class="progress-value"><strong>95%</strong></div>
+</div>
+
+<div class="quality-product"
+    style="position: absolute; margin-left: 588px; margin-top: 575px; font-size: 18px; color: black; font-family: 'Arial', sans-serif;">
+    <b>Quality Products</b>
+</div>
+
+<p style="font-size: 14px; color: #817e7e; position: absolute; margin-left: 588px; margin-top:600px;">Efficiently
+    transition top-line<br> ideas before market.</p>
+
+<div>
+    <button type="button" class="btn-primary btn-lg"
+        style="margin-left: 155px; margin-top: 700px; margin-bottom: 150px;"> Learn More &rarr;
+    </button>
+</div>
+
+<div>
+    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/why_2_1.png"
+        alt="Description of the image" style="margin-left: 860px; margin-top: -850px;">
+</div>
+
+
+
+<div class="page-break"></div>
+<div class="new-page" style="background-color: #ffffff; position: relative;">
+    <!-- Content of the new page goes here -->
+
+
+    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/title_shape_2.svg"
+        alt="Description of the image" style="margin-left: 700px; margin-top: 140px;">
+
+    <p style="font-size: 18px; color: #3366ff;  margin-left: 740px; margin-top: -28px;">
+        <b>PROJECTS</b>
+    </p>
+
+    <h1 style="font-size: 45px; color: #000000;  margin-left: 490px; margin-top: 10px;"><b>Our Recent Latest</b></h1>
+
+    <h2 style="font-size: 45px; color: #1b43e4;  margin-left: 875px; margin-top: -62px;"><b>Projects</b></h2>
+
+    <div class="card"
+        style="width: 25rem; margin-left: 135px;  margin-top:45px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); overflow: hidden;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6ViuGvuQbFOV4VFb5rmeRcPtBQChR4kgKVA&usqp=CAU"
+            class="card-img-top" alt="..." style="height: 300px;">
+        <div class="card-body" style="padding: 50px;">
+            <h1 style="font-size: 28px; color: #000000;  margin-left: -5px; margin-top: -25px;"><b>Web
+                    Development</b>
+            </h1>
+            <p class="card-text" style=" color: #817e7e; margin-bottom:-5px;">Distinctively enable premiuim
+                expertise
+                for multifunctional
+                action items. Energistically benchmark worldwide communities.</p>
+        </div>
+    </div>
+
+    <div class="card"
+        style="width: 25rem; margin-left: 565px;  margin-top:-508px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); overflow: hidden;">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXCcOWtsxkFXbeAxxiAiyNizgeNDlAJDCN2ykNlZOvlehU66qy"
+            class="card-img-top" alt="..." style="height: 300px;">
+        <div class="card-body" style="padding: 50px;">
+            <h1 style="font-size: 28px; color: #000000;  margin-left: -5px; margin-top: -25px;"><b>IT
+                    Consultency</b>
+            </h1>
+            <p class="card-text" style=" color: #817e7e; margin-bottom:-5px;">Distinctively enable premiuim
+                expertise
+                for multifunctional
+                action items. Energistically benchmark worldwide communities.</p>
+        </div>
+    </div>
+
+
+    <div class="card"
+        style="width: 25rem; margin-left: 995px;  margin-top:-508px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);overflow: hidden;">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRl4GsX6zPDgpW5WCxJy3_hwzm2r_E2kP6GQTrtRAROvJpoaELe"
+            class="card-img-top" alt="..." style="height: 300px;">
+        <div class="card-body" style="padding: 50px;">
+            <h1 style="font-size: 28px; color: #000000;  margin-left: -5px; margin-top: -25px;"><b>SEO
+                    Optimization</b>
+            </h1>
+            <p class="card-text" style=" color: #817e7e; margin-bottom:-5px;">Distinctively enable premiuim
+                expertise
+                for multifunctional
+                action items. Energistically benchmark worldwide communities.</p>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-18" style="margin-top: 100px; padding: 0;">
+                <div class="card w-100" style="background-image: url('https://media.istockphoto.com/id/1319287523/video/abstract-blue-animation-background-stock-video-blue-background-abstract-backgrounds-blue.jpg?s=640x640&k=20&c=E2hXUksC96LGCvxHDv1BkyHP2tkekXS5qfuynPuMYOE=');
+                     background-size: 100% auto; background-position: center; height: 325px; position: relative;">
+                    <div class="card-body">
+
+                        <div class="circle-card"
+                            style="position: absolute; margin-top: 90px; left: 70px; width: 140px; height: 140px; background-color: white; border-radius: 50%; box-shadow: -30px 2px 20px -5px rgba(0, 0, 0, 0.5);">
+                            <!-- Content -->
+                            <img src=" https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/01/counter_1_1.svg"
+                                style="margin-left: 50px; margin-top: 40px;">
+                        </div>
+
+                        <h1
+                            style="font-size: 35px;color: white;font-family: fantasy; margin-left: 220px; margin-top: 120px;">
+                            <b>986+</b>
+                        </h1>
+                        <h1
+                            style="font-size: 15px;color: white;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 220px; margin-top:-1px;">
+                            Finished Project</h1>
+
+                        <div class="circle-card"
+                            style="position: absolute; margin-top: -105px; left: 420px; width: 140px; height: 140px; background-color: white; border-radius: 50%; box-shadow: -30px 2px 20px -5px rgba(0, 0, 0, 0.5);">
+                            <!-- Content -->
+                            <img src=" https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/01/counter_1_2.svg"
+                                style="margin-left: 47px; margin-top: 40px;">
+                        </div>
+
+                        <h1
+                            style="font-size: 35px;color: white;font-family: fantasy; margin-left: 580px; margin-top: -75px;">
+                            <b>896+</b>
+                        </h1>
+                        <h1
+                            style="font-size: 15px;color: white;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 580px; margin-top:-1px;">
+                            Happy Clients</h1>
+
+
+                        <div class="circle-card"
+                            style="position: absolute; margin-top: -105px; left: 770px; width: 140px; height: 140px; background-color: white; border-radius: 50%; box-shadow: -30px 2px 20px -5px rgba(0, 0, 0, 0.5);">
+                            <!-- Content -->
+                            <img src=" https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/01/counter_1_3.svg "
+                                style="margin-left: 47px; margin-top: 40px;">
+                        </div>
+
+                        <h1
+                            style="font-size: 35px;color: white;font-family: fantasy; margin-left: 930px; margin-top: -75px;">
+                            <b>396+</b>
+                        </h1>
+                        <h1
+                            style="font-size: 15px;color: white;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 930px; margin-top:-1px;">
+                            Skilled Experts</h1>
+
+                        <div class="circle-card"
+                            style="position: absolute; margin-top: -105px; left: 1111px; width: 140px; height: 140px; background-color: white; border-radius: 50%; box-shadow: -30px 2px 20px -5px rgba(0, 0, 0, 0.5);">
+                            <!-- Content -->
+                            <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/01/counter_1_4.svg"
+                                style="margin-left: 47px; margin-top: 40px;">
+                        </div>
+
+                        <h1
+                            style="font-size: 35px;color: white;font-family: fantasy; margin-left: 1270px; margin-top: -75px;">
+                            <b>496+</b>
+                        </h1>
+                        <h1
+                            style="font-size: 15px;color: white;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 1270px; margin-top:-1px;">
+                            Honorable Awards</h1>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="page-break"></div>
+<div class="new-page" style="background-color: #e2e2e2; position: relative;">
+    <!-- Content of the new page goes here -->
+
+    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/title_shape_2.svg"
+        alt="Description of the image" style="margin-left: 700px; margin-top: 140px;">
+
+    <p style="font-size: 18px; color: #3366ff;  margin-left: 740px; margin-top: -28px;">
+        <b>WORK PROCESS</b>
+    </p>
+
+    <h1 style="font-size: 40px; color: #000000;  margin-left: 629px; margin-top: 10px;"><b>How To Work</b></h1>
+
+    <h2 style="font-size: 40px; color: #1b43e4;  margin-left: 892px; margin-top: -56px;"><b>It!</b></h2>
+
+    <div class="card"
+        style="width: 15rem; height: 15rem; margin-left: 185px;  margin-top:110px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+
+        <div class="card-body" style="padding: 30px;">
+
+            <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/process_card_1.svg"
+                style="margin-left: 75px;">
+            <h1
+                style="font-size: 24px; color: #000000;  margin-left: -5px; margin-top: 25px; font-family: Arial, Helvetica, sans-serif;">
+                <b>Select a Project</b>
+            </h1>
+            <p class="card-text" style=" color: #817e7e; font-size: 14px;">Continua scale empowered metrics with cost
+                effective innovation.</p>
+        </div>
+    </div>
+
+
+    <div class="card"
+        style="width: 15rem; height: 15rem; margin-left: 490px; margin-top: -240px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+        <!-- Adjusted margin-left to shift the card slightly to the right -->
+        <div class="card-body" style="padding: 30px;">
+            <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/process_card_2.svg"
+                style="margin-left: 75px;">
+            <h1
+                style="font-size: 24px; color: #000000; margin-left: -10px; margin-top: 25px; font-family: Arial, Helvetica, sans-serif;">
+                <b>Project Analysis</b>
+            </h1>
+            <p class="card-text" style="color: #817e7e; font-size: 14px;">Continua scale empowered metrics with cost
+                effective innovation.</p>
+        </div>
+    </div>
+
+    <div class="card"
+        style="width: 15rem; height: 15rem; margin-left: 790px; margin-top:-240px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+
+        <div class="card-body" style="padding: 30px;">
+
+            <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/process_card_3.svg"
+                style="margin-left: 75px;">
+            <h1
+                style="font-size: 24px; color: #000000;  margin-left: 10px; margin-top: 25px; font-family: Arial, Helvetica, sans-serif;">
+                <b>Plan Execute</b>
+            </h1>
+            <p class="card-text" style=" color: #817e7e; font-size: 14px;">Continua scale empowered metrics with cost
+                effective innovation.</p>
+        </div>
+    </div>
+
+    <div class="card"
+        style="width: 15rem; height: 15rem; margin-left: 1090px; margin-top:-240px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+
+        <div class="card-body" style="padding: 30px;">
+
+            <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/process_card_4.svg"
+                style="margin-left: 75px;">
+            <h1
+                style="font-size: 24px; color: #000000;  margin-left: 5px; margin-top: 25px; font-family: Arial, Helvetica, sans-serif;">
+                <b>Deliver Result</b>
+            </h1>
+            <p class="card-text" style=" color: #817e7e; font-size: 14px;">Continua scale empowered metrics with cost
+                effective innovation.</p>
+        </div>
+    </div>
+
+
+    <div class="circle-card"
+        style="position: absolute; margin-top: -265px; left: 150px; width: 80px; height: 80px; background-color: rgb(188, 57, 188); border-radius: 50%; box-shadow: -10px 2px 20px -5px rgba(0, 0, 0, 0.5); animation: wave 3.5s infinite;">
+        <!-- Content -->
+        <h1 style="color: white; margin-left: 17px; margin-top: 15px;"><b>01</b></h1>
+    </div>
+
+    <div class="circle-card"
+        style="position: absolute; margin-top: -265px; left: 460px; width: 80px; height: 80px; background-color: rgb(188, 57, 188); border-radius: 50%; box-shadow: -10px 2px 20px -5px rgba(0, 0, 0, 0.5); animation: wave 3.5s infinite;">
+        <!-- Content -->
+        <h1 style="color: white; margin-left: 17px; margin-top: 15px;"><b>02</b></h1>
+    </div>
+
+    <div class="circle-card"
+        style="position: absolute; margin-top: -265px; left: 760px; width: 80px; height: 80px; background-color: rgb(188, 57, 188); border-radius: 50%; box-shadow: -10px 2px 20px -5px rgba(0, 0, 0, 0.5); animation: wave 3.5s infinite;">
+        <!-- Content -->
+        <h1 style="color: white; margin-left: 17px; margin-top: 15px;"><b>03</b></h1>
+    </div>
+
+    <div class="circle-card"
+        style="position: absolute; margin-top: -265px; left: 1060px; width: 80px; height: 80px; background-color: rgb(188, 57, 188); border-radius: 50%; box-shadow: -10px 2px 20px -5px rgba(0, 0, 0, 0.5); animation: wave 3.5s infinite;">
+        <!-- Content -->
+        <h1 style="color: white; margin-left: 17px; margin-top: 15px;"><b>04</b></h1>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-11" style="margin-top: 100px;">
+                <div class="card w-100" style="background-color: rgb(7, 7, 53);
+                 background-size: 100% auto; background-position: center; height: 190px; position: relative;">
+                    <div class="card-body">
+
+                        <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/brand_2_2.png"
+                            style="margin-top: 60px; margin-left: 60px;">
+
+                        <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/brand_2_3.png"
+                            style="margin-top: 60px; margin-left: 60px;">
+
+                        <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/brand_2_4.png"
+                            style="margin-top: 60px; margin-left: 60px;">
+
+                        <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/brand_2_5.png"
+                            style="margin-top: 60px; margin-left: 60px;">
+
+                        <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/brand_2_6.png"
+                            style="margin-top: 60px; margin-left: 60px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="page-break"></div>
+<div class="new-page" style="background-color: white !important; position: relative;">
+    <!-- content here -->
+
+    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/title_shape_2.svg"
+        alt="Description of the image" style=" margin-left: 690px; margin-top: 130px;">
+
+    <p style="font-size: 18px; color: #3366ff;  margin-left: 725px; margin-top: -27px;"><b>GREAT
+            TEAM</b></p>
+
+    <h1 style="font-size: 40px; color: #000000;  margin-left: 490px; margin-top: 10px;"><b>See Our Skilled Expert</b>
+    </h1>
+
+    <h2 style="font-size: 40px; color: #1b43e4;  margin-left: 915px; margin-top: -56px;"><b>Team</b></h2>
+
+
+    <div class="card-container" id="card1-hover"
+        style="width: 25rem; height: 25rem; margin-left: 110px;  margin-top:70px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+
+        <div class="card-body" style="padding: 30px;">
+
+            <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/team_3_2.jpg"
+                style="margin-left: -5px; margin-top: -10px;">
+
+            <h1 class="card-title1"
+                style="margin-left: 85px; margin-top: 15px; font-size: 25px; font-family: 'Arial', sans-serif;">
+                <b>Alex Fernandes</b>
+            </h1>
+            <h2 class="card-title2"
+                style="margin-left: 130px; margin-top: 5px; font-size: 12px; font-family: 'Arial', sans-serif; color: #0707ff;">
+                <b>Project Manager</b>
+            </h2>
+
+
+        </div>
+    </div>
+
+
+    <div class="card-container" id="card1-hover"
+        style="width: 25rem; height: 25rem; margin-left: 540px;  margin-top:-400px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+
+        <div class="card-body" style="padding: 30px;">
+
+            <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/team_3_3.jpg"
+                style="margin-left: -5px; margin-top: -10px;">
+
+            <h1 class="card-title1"
+                style="margin-left: 95px; margin-top: 15px; font-size: 25px; font-family: 'Arial', sans-serif;">
+                <b>Mary Crispy</b>
+            </h1>
+
+            <h2 class="card-title2"
+                style="margin-left: 130px; margin-top: 5px; font-size: 12px; font-family: 'Arial', sans-serif; color: #0707ff;">
+                <b>Chief Expert</b>
+            </h2>
+
+
+        </div>
+    </div>
+
+    <div class="card-container" id="card1-hover"
+        style="width: 25rem; height: 25rem; margin-left: 970px; margin-top:-400px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+
+        <div class="card-body" style="padding: 30px;">
+
+            <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/team_3_4.jpg"
+                style="margin-left: -5px; margin-top: -10px;">
+
+            <h1 class="card-title1"
+                style="margin-left: 87px; margin-top: 15px; font-size: 25px; font-family: 'Arial', sans-serif;">
+                <b>Henry Joseph</b>
+            </h1>
+
+            <h2 class="card-title2"
+                style="margin-left: 130px; margin-top: 5px; font-size: 12px; font-family: 'Arial', sans-serif; color: #0707ff;">
+                <b>Product Manager</b>
+            </h2>
+
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-12" style="margin-top: 130px; padding: 0;">
+                <div class="card w-100" style="background-image: url('https://img.freepik.com/premium-vector/dotted-world-map-black-background-vector-illustration_541075-470.jpg');
+                     background-size: 100% auto; background-position: center; height: 550px; position: relative;">
+                    <div class="card-body">
+                        <!-- Image -->
+                        <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/title_shape_2.svg"
+                            alt="Description of the image"
+                            style="position: absolute; margin-left: 620px; margin-top: 100px;">
+
+                        <!-- Paragraph -->
+                        <p style="font-size: 18px; color: #3366ff; position: absolute; top: 115px; right: 630px;">
+                            <b>CUSTOMER FEEDBACK</b>
+                        </p>
+
+                        <h1
+                            style="font-size: 40px; color: #ffffff; position: absolute; top: 168px; right: 500px; font-family: 'Arial', sans-serif;">
+                            <b> What Happy Clients Says </b>
+                        </h1>
+
+                        <h1
+                            style="font-size: 40px; color: #0707ff; position: absolute; top: 172px; right: 640px; font-family: 'Arial', sans-serif;">
+                            <b> <br>About Us?</b>
+                        </h1>
+
+                        <div class="card"
+                            style="width: 25rem; height: 23rem; position: absolute; bottom: -200px; right: 1000px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)">
+                            <div class="card-body">
+
+                                <p class="card-text"
+                                    style="color: #000000; margin-top: 100px ;font-size: 16px; margin-left: 15px; font-family: 'Arial', sans-serif;">
+                                    Objectively visualize error-free technology for B2B alignment. Monotonectally
+                                    harness an expanded array of models via effective collaboration. Globally synergize
+                                    resouces sucking value via cutting-edge.</p>
+
+                                <h1 class="card-title"
+                                    style="margin-left: 15px; margin-top: 15px; font-size: 25px; font-family: 'Arial', sans-serif;">
+                                    <b>Jackline Techie</b>
+                                </h1>
+
+                                <p class="card-text"
+                                    style="color: #000000; margin-top: 10px ;font-size: 16px; margin-left: 15px; font-family: 'Arial', sans-serif;">
+                                    CEO at Patna</p>
+
+                                <div
+                                    style="position: absolute; margin-left: 20px; margin-top: -380px; padding: 10px; background-color: black;">
+                                    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/testi_3_2.jpg"
+                                        alt="Description of the image" style="width: 100px; height: 100px; ">
+                                </div>
+
+                                <p style="color: blue; font-size: 25px; margin-top: -305px; margin-left: 250px;">
+                                    &#9733;&#9733;&#9733;&#9733;</p>
+
+                                <div class="circle-card"
+                                    style="position: absolute; margin-top: -35px; left: 75px; width: 40px; height: 40px; background-color: rgb(74, 113, 255); border-radius: 50%; box-shadow: -10px 2px 20px -5px rgba(0, 0, 0, 0.5); animation: wave 5s infinite;">
+                                    <!-- Content -->
+                                    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/quote_left_3.svg"
+                                        style="margin-left: 10px; margin-top: 10px;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card"
+                            style="width: 25rem; height: 23rem; position: absolute; bottom: -200px; right: 545px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)">
+                            <div class="card-body">
+
+                                <p class="card-text"
+                                    style="color: #000000; margin-top: 100px ;font-size: 16px; margin-left: 15px; font-family: 'Arial', sans-serif;">
+                                    Objectively visualize error-free technology for B2B alignment. Monotonectally
+                                    harness an expanded array of models via effective collaboration. Globally synergize
+                                    resouces sucking value via cutting-edge.</p>
+
+                                <h1 class="card-title"
+                                    style="margin-left: 15px; margin-top: 15px; font-size: 25px; font-family: 'Arial', sans-serif;">
+                                    <b>Abrahm D'souza</b>
+                                </h1>
+
+                                <p class="card-text"
+                                    style="color: #000000; margin-top: 10px ;font-size: 16px; margin-left: 15px; font-family: 'Arial', sans-serif;">
+                                    CEO at Goa</p>
+
+                                <div
+                                    style="position: absolute; margin-left: 20px; margin-top: -380px; padding: 10px; background-color: black;">
+                                    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/testi_3_3.jpg"
+                                        alt="Description of the image" style="width: 100px; height: 100px; ">
+                                </div>
+
+                                <p style="color: blue; font-size: 25px; margin-top: -305px; margin-left: 250px;">
+                                    &#9733;&#9733;&#9733;&#9733;</p>
+
+                                <div class="circle-card"
+                                    style="position: absolute; margin-top: -35px; left: 75px; width: 40px; height: 40px; background-color: rgb(74, 113, 255); border-radius: 50%; box-shadow: -10px 2px 20px -5px rgba(0, 0, 0, 0.5); animation: wave 5s infinite;">
+                                    <!-- Content -->
+                                    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/quote_left_3.svg"
+                                        style="margin-left: 10px; margin-top: 10px;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card"
+                            style="width: 25rem; height: 23rem; position: absolute; bottom: -200px; right: 92px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)">
+                            <div class="card-body">
+
+                                <p class="card-text"
+                                    style="color: #000000; margin-top: 100px ;font-size: 16px; margin-left: 15px; font-family: 'Arial', sans-serif;">
+                                    Objectively visualize error-free technology for B2B alignment. Monotonectally
+                                    harness an expanded array of models via effective collaboration. Globally synergize
+                                    resouces sucking value via cutting-edge.</p>
+
+                                <h1 class="card-title"
+                                    style="margin-left: 15px; margin-top: 15px; font-size: 25px; font-family: 'Arial', sans-serif;">
+                                    <b>MD Sumon Mia</b>
+                                </h1>
+
+                                <p class="card-text"
+                                    style="color: #000000; margin-top: 10px ;font-size: 16px; margin-left: 15px; font-family: 'Arial', sans-serif;">
+                                    CEO at Karnataka</p>
+
+
+                                <div
+                                    style="position: absolute; margin-left: 20px; margin-top: -380px; padding: 10px; background-color: black;">
+                                    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/testi_3_4.jpg"
+                                        alt="Description of the image" style="width: 100px; height: 100px; ">
+                                </div>
+
+                                <p style="color: blue; font-size: 25px; margin-top: -305px; margin-left: 250px;">
+                                    &#9733;&#9733;&#9733;&#9733;</p>
+
+                                <div class="circle-card"
+                                    style="position: absolute; margin-top: -35px; left: 75px; width: 40px; height: 40px; background-color: rgb(74, 113, 255); border-radius: 50%; box-shadow: -10px 2px 20px -5px rgba(0, 0, 0, 0.5); animation: wave 5s infinite;">
+                                    <!-- Content -->
+                                    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/quote_left_3.svg"
+                                        style="margin-left: 10px; margin-top: 10px;">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-10" style="margin-top: 350px; margin-bottom: 100px;">
+                <div class="card w-100" style=" background-color: rgb(236, 236, 236);
+                     background-size: 100% auto; background-position: center; height: 400px;">
+                    <div class="card-body">
+
+                        <img src="https://shubhanshushekhar.com/wp-content/uploads/2023/03/woman-working-call-center-talking-with-clients-using-headphones-microphone_23-2149256143-e1680088597613.png"
+                            style="margin-left: -17px; width: 520px; height: 400px;margin-top: -18px;">
+
+                        <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/title_shape_2.svg"
+                            alt="Description of the image" style=" margin-left: 80px; margin-top: -220px;">
+
+                        <p style="font-size: 18px; color: #3366ff;  margin-left: 625px; margin-top: -315px;"><b>LET'S
+                                CONSULTATION</b></p>
+
+                        <h1 style="font-size: 40px; color: #000000;  margin-left: 585px; margin-top: 10px;"><b>Let's
+                                Talk About Business Solutions</b>
+                        </h1>
+
+                        <h2 style="font-size: 40px; color: #1b43e4;  margin-left: 775px; margin-top: -56px;"><b>With
+                                Us</b>
+                        </h2>
+
+                        <div>
+                            <button type="button" class="btn-primary btn-lg"
+                                style="margin-left: 590px; margin-top: 40px; margin-bottom: 150px;"> Contact Us &rarr;
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="page-break"></div>
+<div class="new-page" style="background-color: #f0f0f0; position: relative;">
+    <!-- content of this page go here -->
+
+    <img src="https://themeholy.com/wordpress/fresh/wp-content/uploads/2024/02/title_shape_2.svg"
+        alt="Description of the image" style="margin-left: 700px; margin-top: 140px;">
+
+    <p
+        style="font-size: 18px; color: #3366ff;  margin-left: 740px; margin-top: -28px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <b>NEWS & ARTICLES</b>
+    </p>
+
+    <h1 style="font-size: 35px; color: #000000;  margin-left: 540px; margin-top: 10px;"><b>Get Every Single Update</b>
+    </h1>
+
+    <h2 style="font-size: 35px; color: #1b43e4;  margin-left: 947px; margin-top: -51px;"><b>Blog</b></h2>
+
+
+    <div class="card"
+        style="width: 25rem; margin-left: 135px; height: 650px; margin-top:69px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); overflow: hidden;">
+        <img src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2023/02/blog-s-1-4-391x250.jpg"
+            class="card-img-top" alt="..." style="height: 280px;">
+        <div class="card-body" style="padding: 50px;">
+
+            <p class="card-text" style=" color: #817e7e; margin-top: -15px; margin-left: -5px;"> &#128197;13th Feb, 2023
+            </p>
+
+            <p class="card-text" style=" color: #817e7e; margin-top: -40px; margin-left: 185px;"> &#128172;3 Comments
+            </p>
+
+            <h1 style="font-size: 24px; color: #000000;  margin-left: -5px; margin-top: 30px;"><b>Latin derived from
+                    Cicero's 1st-Century BC</b>
+            </h1>
+            <p class="card-text" style=" color: #817e7e; margin-top: 20px;">Distinctively enable premiuim
+                expertise
+                for multifunctional
+                action items. Energistically benchmark worldwide communities.
+            </p>
+
+            <hr style="margin-top: 30px;">
+
+            <img src="https://secure.gravatar.com/avatar/86d033e2d42a0631cc4f58b82dd01de9?s=96&d=mm&r=g"
+                style="margin-left: 1px; width: 40px; margin-top: 25px;">
+
+            <p class="card-text" style=" color: #817e7e; margin-top:-35px; margin-left: 50px; font-size: 18px;">By
+                Webteck
+            </p>
+
+            <p class="card-text" style=" color: #817e7e; margin-top: -42px; margin-left: 190px;">READ MORE &#x279C;
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card"
+        style="width: 25rem; margin-left: 576px; height: 650px; margin-top:-650px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); overflow: hidden;">
+        <img src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2023/02/blog-s-1-1-391x250.jpg"
+            class="card-img-top" alt="..." style="height: 280px;">
+        <div class="card-body" style="padding: 50px;">
+
+            <p class="card-text" style=" color: #817e7e; margin-top: -15px; margin-left: -5px;"> &#128197;13th Feb, 2023
+            </p>
+
+            <p class="card-text" style=" color: #817e7e; margin-top: -40px; margin-left: 185px;"> &#128172;3 Comments
+            </p>
+
+            <h1 style="font-size: 24px; color: #000000;  margin-left: -5px; margin-top: 30px;"><b>Latin derived from
+                    Cicero's 1st-Century BC</b>
+            </h1>
+            <p class="card-text" style=" color: #817e7e; margin-top: 20px;">Distinctively enable premiuim
+                expertise
+                for multifunctional
+                action items. Energistically benchmark worldwide communities.
+            </p>
+
+            <hr style="margin-top: 30px;">
+
+            <img src="https://secure.gravatar.com/avatar/86d033e2d42a0631cc4f58b82dd01de9?s=96&d=mm&r=g"
+                style="margin-left: 1px; width: 40px; margin-top: 25px;">
+
+            <p class="card-text" style=" color: #817e7e; margin-top:-35px; margin-left: 50px; font-size: 18px;">By
+                Webteck
+            </p>
+
+            <p class="card-text" style=" color: #817e7e; margin-top: -42px; margin-left: 190px;">READ MORE &#x279C;
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card"
+        style="width: 25rem; margin-left: 1015px; height: 650px; margin-top:-650px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); overflow: hidden;">
+        <img src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2023/02/blog-s-1-3-391x250.jpg"
+            class="card-img-top zoom-on-hover" alt="..." style="height: 280px;">
+        <div class="card-body" style="padding: 50px;">
+
+            <p class="card-text" style=" color: #817e7e; margin-top: -15px; margin-left: -5px;"> &#128197;13th Feb, 2023
+            </p>
+
+            <p class="card-text" style=" color: #817e7e; margin-top: -40px; margin-left: 185px;"> &#128172;3 Comments
+            </p>
+
+            <h1 style="font-size: 24px; color: #000000;  margin-left: -5px; margin-top: 30px;"><b>Latin derived from
+                    Cicero's 1st-Century BC</b>
+            </h1>
+            <p class="card-text" style=" color: #817e7e; margin-top: 20px;">Distinctively enable premiuim
+                expertise
+                for multifunctional
+                action items. Energistically benchmark worldwide communities.
+            </p>
+
+            <hr style="margin-top: 30px;">
+
+            <img src="https://secure.gravatar.com/avatar/86d033e2d42a0631cc4f58b82dd01de9?s=96&d=mm&r=g"
+                style="margin-left: 1px; width: 40px; margin-top: 25px;">
+
+            <p class="card-text" style=" color: #817e7e; margin-top:-35px; margin-left: 50px; font-size: 18px;">By
+                Webteck
+            </p>
+
+            <p class="card-text" style=" color: #817e7e; margin-top: -42px; margin-left: 190px;">READ MORE &#x279C;
+            </p>
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-15" style="margin-top: 150px; padding: 0;">
+                <div class="card w-100"
+                    style="background: url(https://files.123freevectors.com/wp-content/original/156234-abstract-navy-blue-background.jpg); background-size: cover; height: 700px;">
+                    <div class="card-body">
+                        <!-- Content goes here -->
+
+                        <img src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2024/02/logo-white.svg"
+                            style="margin-top: 80px; margin-left: 120px; vertical-align: top;">
+                        <span
+                            style="margin-top: 60px; margin-left: 120px; border-left: 3px solid purple; height: 70px; display: inline-block; vertical-align: top;"></span>
+
+                        <h1 style="font-size: 40px; color: white;  margin-left: 480px; margin-top: -80px;"><b>News
+                                Subscription</b>
+                        </h1>
+                        <p class="card-text" style=" color: white; margin-top: -1px; margin-left: 480px;">Get Latest
+                            Deals and Offers. Subscribe Now
+                        </p>
+
+                        <form style="width: 300px; height: 500px;">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="  Email Address                   &#9993;"
+                                    style="font-size: 20px; height: 55px; margin-left: 950px; margin-top: -75px; background-color: #090952; padding: 0; color: white !important;">
+                            </div>
+                            <button type="submit" class="btn btn-primary"
+                                style="font-size: 20px;width: 150px; height: 55px; margin-top: -83px; margin-left: 1270px;">SUBSCRIBE</button>
+                        </form>
+
+
+                        <hr style="margin-top: -340px; color: white; width: 1300px; margin-left: 120px; height: 2px;">
+
+                        <h1 style="font-size: 25px; color: white;  margin-left: 120px; margin-top: 100px;"><b>ABOUT
+                                COMPANY</b>
+                        </h1>
+                        <p class="card-text" style=" color: white; margin-top: 45px; margin-left: 120px;">Professionally
+                            redefine transparent ROI<br>through low-risk high-yield imperatives. <br> Progressively
+                            create empowered. cost <br>effective users via team driven.
+                        </p>
+
+                        <div>
+                            <h1 style="font-size: 25px; color: white;  margin-left: 520px; margin-top: -190px;"><b>QUICK
+                                    LINKS</b>
+                            </h1>
+
+                            <h2 style="font-size: 17px; color: white;  margin-left: 520px; margin-top: 48px;"><b>></b>
+                                About Us
+                            </h2>
+
+                            <h3 style="font-size: 17px; color: white;  margin-left: 520px; margin-top: 20px;"><b>></b>
+                                Team
+                            </h3>
+
+                            <h4 style="font-size: 17px; color: white;  margin-left: 520px; margin-top: 20px;"><b>></b>
+                                Faq
+                            </h4>
+
+                            <h5 style="font-size: 17px; color: white;  margin-left: 520px; margin-top: 20px;"><b>></b>
+                                Projects
+                            </h5>
+
+                            <h6 style="font-size: 17px; color: white;  margin-left: 520px; margin-top: 20px;"><b>></b>
+                                Contact Us
+                            </h6>
+
+                        </div>
+
+                        <div style="margin-left: 250px;">
+                            <h1 style="font-size: 25px; color: white;  margin-left: 520px; margin-top: -269px;"><b>IT
+                                    SERVICES</b>
+                            </h1>
+
+                            <h2 style="font-size: 17px; color: white;  margin-left: 520px; margin-top: 48px;"><b>></b>
+                                Web Development
+                            </h2>
+
+                            <h3 style="font-size: 17px; color: white;  margin-left: 520px; margin-top: 20px;"><b>></b>
+                                Business Development
+                            </h3>
+
+                            <h4 style="font-size: 17px; color: white;  margin-left: 520px; margin-top: 20px;"><b>></b>
+                                Product Management
+                            </h4>
+
+                            <h5 style="font-size: 17px; color: white;  margin-left: 520px; margin-top: 20px;"><b>></b>
+                                UI/UX Design
+                            </h5>
+
+                            <h6 style="font-size: 17px; color: white;  margin-left: 520px; margin-top: 20px;"><b>></b>
+                                Cloud Services
+                            </h6>
+
+                        </div>
+
+                        <div style="margin-left: 250px;">
+                            <h1 style="font-size: 25px; color: white;  margin-left: 820px; margin-top: -269px;">
+                                <b>RECENT POSTS</b>
+                            </h1>
+
+                            <img src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2023/02/blog-s-1-1-80x80.jpg"
+                                style="width: 80px; height: 80px; margin-left: 825px; margin-top: 45px;">
+
+                            <img src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2023/02/blog-s-1-4-80x80.jpg"
+                                style="width: 80px; height: 80px; margin-left: 825px; margin-top: 20px;">
+
+                            <h1 style="font-size: 18px; color: white;  margin-left: 940px; margin-top: -180px;">
+                                Unstiable Entreaties May<br>Collecting Power.
+                            </h1>
+                            <h2 style="font-size: 15px; color: white;  margin-left: 940px; margin-top: 10px;">&#128197;
+                                Feb 13 2023
+                            </h2>
+
+                            <h1 style="font-size: 18px; color: white;  margin-left: 940px; margin-top: 25px;">Regional
+                                Manager Limited<br>Time Management.
+                            </h1>
+                            <h2 style="font-size: 15px; color: white;  margin-left: 940px; margin-top: 10px;">&#128197;
+                                Feb 13 2023
+                            </h2>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+    <div style="background-color: #0707ff; color: white; padding: 5px;">
+        <h1 style="font-size: 18px;  margin-top: 25px; margin-bottom: 25px; margin-left: 150px;"> Copyright &copy; 2024
+            Raunak. All Rights Reserved</h1>
+    </div>
+
+<div class="page-break"></div>
+
+
+    <script src="project02.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    </body>
+
+</html>
